@@ -25,7 +25,7 @@
     "bitfinex-api-node": "^2.0.0-beta",
     "bitx": "^1.5.0",
     "bluebird": "^3.5.1",
-    "ccxt": "^1.18.133",
+    "ccxt": "file:ccxt-1.18.1.tar.gz",
     "coinfalcon": "^1.0.3",
     "crypto-js": "^3.1.9-1",
     "deasync": "^0.1.14",
