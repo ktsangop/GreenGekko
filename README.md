@@ -1,3 +1,26 @@
+# Installing Green Gekko in November 2021
+So it's late 2021 and you wanted to test out the most popular open source trading bot.
+But during the first steps, you realize that packages are out of date, install scripts do not work and you are dissappointed by open source trading bots already.
+
+Fear not. You shall succeed.
+:)
+
+OK let's cut to the chase.
+The following steps are an update on top of the official installation steps, which probably didn't work for you.
+In order to work around those, you should already be checked out to the `installation-fix` branch.
+
+1. Install `nvm` if you haven't already by following the instructions here: https://github.com/nvm-sh/nvm#install--update-script
+2. Logout/close your shell/terminal and re-open for `nvm` to work
+3. Install nodejs 10.18.1 by running `nvm install 10.18.1`
+4. Use the above version by running `nvm use 10.18.1`
+5. Install the main project by running `npm install`
+6. Go to the `/exchange` directory to install the respective library by running `cd exchange`
+7. Install the exchange libray by running `npm install`
+8. At this step you should have no installation errors, but more than a few warnings. Ignore them if you want your sanity
+9. Go back to the root project directory by running `cd ..`
+10. Start gekko UI interface by using the default config by running `npm start`
+11. If you are on a OS with a GUI, you should already have a browser opened on `http://localhost:3000`. If not, open a browser and go to that address to access gekko UI
+
 # Green Gekko 2021 r297 [![npm](https://img.shields.io/npm/dm/gekko.svg)]() [![Build Status](https://travis-ci.org/askmike/gekko.png)](https://travis-ci.org/askmike/gekko) [![Build status](https://ci.appveyor.com/api/projects/status/github/askmike/gekko?branch=stable&svg=true)](https://ci.appveyor.com/project/askmike/gekko)
 
 A crypto trading bot written in Node.js. The purpose is to provide automated trade execution on crypto exchanges by applying algorithmic trading strategies on historical and current market data - to automate buy and sell decisions. GreenGekko is a framework to write own trading strategies, handles exchange connectivity and candle calculations, and offers features for strategy backtesting, paper trading and live trading.
