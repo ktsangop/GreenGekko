@@ -10,17 +10,20 @@ The following steps are an update on top of the official installation steps, whi
 In order to work around those, you should already be checked out to the `installation-fix` branch.
 I have removed a missing dependency (`ccxt` package) and all the files that are dependent on it, which are some exchanges you should not really care about.
 
-1. Install `nvm` if you haven't already by following the instructions here: https://github.com/nvm-sh/nvm#install--update-script
-2. Logout/close your shell/terminal and re-open for `nvm` to work
-3. Install nodejs 10.18.1 by running `nvm install 10.18.1`
-4. Use the above version by running `nvm use 10.18.1`
-5. Install the main project by running `npm install`
-6. Go to the `/exchange` directory to install the respective library by running `cd exchange`
-7. Install the exchange libray by running `npm install`
-8. At this step you should have no installation errors, but more than a few warnings. Ignore them if you want your sanity
-9. Go back to the root project directory by running `cd ..`
-10. Start gekko UI interface by using the default config by running `npm start`
-11. If you are on a OS with a GUI, you should already have a browser opened on `http://localhost:3000`. If not, open a browser and go to that URL to access gekko UI
+1. I assume you have already cloned `GreenGekko` on your system, and have already tried to install it once.
+2. Go to `/GreenGekko` directory and remove all previously installed packages by running : `rm -rf node_modules`
+3. Remove the `/exchange/node_modules` directory also by running `rm -rf exchange/node_modules`
+4. Install `nvm` if you haven't already by following the instructions here: https://github.com/nvm-sh/nvm#install--update-script
+5. Logout/close your shell/terminal and re-open for `nvm` to work
+6. Install nodejs 10.18.1 by running `nvm install 10.18.1`
+7. Use the above version by running `nvm use 10.18.1`
+8. Install the main project by running `npm install`
+9. Go to the `/exchange` directory to install the respective library by running `cd exchange`
+10. Install the exchange libray by running `npm install`
+11. At this step you should have no installation errors, but more than a few warnings. Ignore them if you want your sanity
+12. Go back to the root project directory by running `cd ..`
+13. Start gekko UI interface by using the default config by running `npm start`
+14. If you are on a OS with a GUI, you should already have a browser opened on `http://localhost:3000`. If not, open a browser and go to that URL to access gekko UI
 
 # Green Gekko 2021 r297 [![npm](https://img.shields.io/npm/dm/gekko.svg)]() [![Build Status](https://travis-ci.org/askmike/gekko.png)](https://travis-ci.org/askmike/gekko) [![Build status](https://ci.appveyor.com/api/projects/status/github/askmike/gekko?branch=stable&svg=true)](https://ci.appveyor.com/project/askmike/gekko)
 
