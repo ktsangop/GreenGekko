@@ -7,10 +7,9 @@ Fear not. You shall succeed.
 
 OK let's cut to the chase.
 The following steps are an update on top of the official installation steps, which probably didn't work for you.
-In order to work around those, you should already be checked out to the `installation-fix` branch of `ktsangop/GreenGekko` or on a forked branch of your own.
 I have removed a missing dependency (`ccxt` package) and all the files that are dependent on it, which are some exchanges you should not really care about.
 
-1. I assume you have already cloned `GreenGekko` on your system, and have already tried to install it once.
+1. I assume you have already cloned `ktsangop/GreenGekko` on your system.
 2. Go to `/GreenGekko` directory and remove all previously installed packages by running : `rm -rf node_modules`
 3. Remove the `/exchange/node_modules` directory also by running `rm -rf exchange/node_modules`
 4. Install `nvm` if you haven't already by following the instructions here: https://github.com/nvm-sh/nvm#install--update-script
