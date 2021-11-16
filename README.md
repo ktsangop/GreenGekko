@@ -7,7 +7,7 @@ Fear not. You shall succeed.
 
 OK let's cut to the chase.
 The following steps are an update on top of the official installation steps, which probably didn't work for you.
-In order to work around those, you should already be checked out to the `installation-fix` branch.
+In order to work around those, you should already be checked out to the `installation-fix` branch of `ktsangop/GreenGekko` or on a forked branch of your own.
 I have removed a missing dependency (`ccxt` package) and all the files that are dependent on it, which are some exchanges you should not really care about.
 
 1. I assume you have already cloned `GreenGekko` on your system, and have already tried to install it once.
